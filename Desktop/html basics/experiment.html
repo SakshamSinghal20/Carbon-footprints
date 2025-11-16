@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            
+
+            @keyframes bounce{
+                from{ }
+                50% {transform: translateY(-100px); }
+                to {}
+            }
+
+            
+
+            .wrap{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                height: 100vh;
+                
+            }
+            .box{
+                background-color: aquamarine;
+                color: rgb(0, 0, 0);
+                height: 400px;
+                width: 300px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                animation: bounce 3s ease infinite;
+                box-shadow: 10px 10px white;
+
+            }
+
+            p{
+                font-size: 500px;
+                color: palevioletred;
+            }
+        
+        </style>
+    </head>
+    <body>
+
+        
+
+        <div class="wrap">
+            <div class="box">
+                <p>&#x2665;</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

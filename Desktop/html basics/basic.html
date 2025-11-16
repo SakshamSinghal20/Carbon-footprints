@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+<head>
+    <title>First Class</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="learn HTML basics with example for begi">
+    <meta name="keywords" content="HTML,css, javascript">
+    <meta name="author" content="john doe">
+    <link rel="stylesheet" href="/index.css">
+  <!-- <style>
+    
+div > p {
+    color: blue;
+}
+  </style> -->
+  <!-- <style>
+    div ~ p{
+    color:aquamarine
+}
+  </style> -->
+  </head>
+
+<body>
+
+<!-- <div class="container">
+  <div class="item" style="order: 3;">it</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item" style="order:0;">em</div>
+</div> -->
+
+<!-- 
+<input type="text"/>
+<input type="numbers"/>
+<p class="highlight">
+  highlighted text
+</p>
+<img width="207" height="313" sizes="(max-width: 767px) 100vw, (max-width: 433px) min(100%, 385px), (max-height: 756px) min(100%, 385px), (min-aspect-ratio: 2075/3130) calc(calc(100vh - 175px) * 0.6629392971246006), calc(100vw - 48px)" alt="Woman taking a selfie in a mirror" class="responsiveImg-czQTaZ" src="https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" style="background-image: url(&quot;data:image/bmp;base64,Qk32BAAAAAAAADYAAAAoAAAACAAAAAgAAAABABgAAAAAAMAAAAATCwAAEwsAAAAAAAAAAAAAoKCgkJCQY2NjAgICAAAAFhYWMDAwJSUlwMDAsLCwhISETk5OOzs7UlJSW1tbT09P2traysrKnp6ebm5uYWFhcnJydnZ2aGho4uLi0tLSqampfX19c3NzgICAgoKCcnJy1tbWx8fHoqKifX19dXV1gICAfn5+bGxstra2qqqqjY2NcXFxbW1tdHR0bm5uWVlZj4+PhoaGcnJyYWFhYGBgY2NjWFhYPT09enp6c3NzZGRkWVlZWlpaWlpaTExMKysr&quot;); background-size: cover; background-color: rgb(115, 115, 115);" srcset="https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=385&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 385w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=685&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 685w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=770&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 770w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=985&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 985w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=1285&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1285w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=1370&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1370w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=1585&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1585w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=1885&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1885w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=1970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1970w, https://images.unsplash.com/photo-1757058902029-e757ffe23ef7?q=80&amp;w=2075&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2075w">
+<br>
+<a href="https://fast.com/">this is htpps</a>
+<br> -->
+<!-- <p title="new">NEW</p> -->
+<!-- <h1>
+  H1
+</h1>
+<p>PARA</p> -->
+
+<!-- 
+<p>without</p>
+<p title="this a paragraph">hi</p> -->
+
+  <!-- <div class="myClass">
+    <p>hi</p>
+  </div>
+
+  <p>works</p>
+  <p>works</p>
+  <p>works</p> -->
+
+  <!-- <div class="bgstyle">
+    <p style= "color: green">HELLO</p>
+  </div>
+  <div class="box">
+    <p>l brano è stato accolto positivamente dai critici musicali e ha goduto di un grande successo commerciale, raggiungendo la top ten delle classifiche di ventotto paesi (fra cui Australia, Belgio, Germania, Malaysia, Nuova Zelanda, Paesi Bassi, Norvegia, Regno Unito, Singapore, Svezia e Svizzera) e regalando alla cantante la sua prima numero uno nella Billboard Hot 100 statunitense, nonché i suoi migliori piazzamenti in vari mercati. È stato certificato inoltre disco d'oro o di platino in quindici stati e, negli USA, dove ha venduto più di due milioni di copie, doppio disco di platino.
+
+Lose You to Love Me è stata promossa attraverso un video musicale, in bianco e nero girato da Sophie Muller interamente su iPhone 11 Pro, e con un'esibizione dal vivo agli American Music Awards 2019, la prima in più di due anni per l'artista. Infine, è stata inserita nelle liste dei migliori pezzi dell'anno stilate da Vulture e Billboard, e ne è stata pubblicata la versione demo nel 2020 per celebrare il primo anniversario de</p>
+  </div> -->
+<!-- 
+  <div class="myheight">
+  </div>
+  <div class="bg">
+    <p>a strage di Torino del 1864 fu un eccidio compiuto da alcuni membri del Regio Esercito italiano (principalmente allievi carabinieri) il 21 e il 22 settembre ai danni di gruppi di manifestanti civili. Gli scontri avvennero durante manifestazioni di protesta popolare in merito al trasferimento della capitale del Regno d'Italia dalla città piemontese a Firenze.
+https://images.unsplasha strage di Torino del 1864 fu un eccidio compiuto da alcuni membri del Regio Esercito italiano (principalmente allievi carabinieri) il 21 e il 22 settembre ai danni di gruppi di manifestanti civili. Gli scontri avvennero durante manifestazioni di protesta popolare in merito al trasferimento della capitale del Regno d'Italia dalla città piemontese a Firenze.
+
+Nel pomeriggio del 21 settembre 1864, dopo che in mattinata scontri tra manifestanti e forze dell'ordine avevano avuto luogo in Piazza San Carlo a Torino, una folla di civili armati di bastoni tentò di avvicinarsi alla sede del ministero dell'interno in Piazza Castello, difesa da un contingente di allievi carabinieri: i carabinieri spararono sui manifestanti causando 15 vittime. La sera seguente, 22 settembre, nuovi tumulti ebbero luogo in Piazza San Carlo coinvolgendo altri allievi carabinieri che nella confusione spararono indiscriminatamente sulla folla, colpendo anche i membri di un battaglione di fanteria che stavano attraversando la piazza i quali aprirono a loro volta il fuoco: nel tiro incrociato rimasero uccise 47 persone tra militari e civili.
+
+I fatti provocarono la caduta del governo Minghetti nonché diverse inchieste ufficiali da parte di commissioni parlamentari; tutti gli arrestati furono tuttavia oggetto di un'amnistia generale nel febbraio 1865.
+
+Leggi la voce · Tutte le voci in vetrina
+
+
+ Voci di qualità
+
+Lose You to Love Me è un singolo della cantante statunitense Selena Gomez, pubblicato il 23 ottobre 2019 come primo estratto dal terzo album in studio Rare.
+
+Realizzata con i compositori Julia Michaels e Justin Tranter, che già da anni collaboravano con l'artista, e con i produttori Mattman & Robin e Finneas O'Connell, la canzone si configura come una ballata pop incentrata sull'amore verso sé stessi, in cui la voce della cantante è accompagnata da un coro, un pianoforte e strumenti ad arco.
+
+Il brano è stato accolto positivamente dai critici musicali e ha goduto di un grande successo commerciale, raggiungendo la top ten delle classifiche di ventotto paesi (fra cui Australia, Belgio, Germania, Malaysia, Nuova Zelanda, Paesi Bassi, Norvegia, Regno Unito, Singapore, Svezia e Svizzera) e regalando alla cantante la sua prima numero uno nella Billboard Hot 100 statunitense, nonché i suoi migliori piazzamenti in vari mercati. È stato certificato inoltre disco d'oro o di platino in quindici stati e, negli USA, dove ha venduto più di due milioni di copie, doppio disco di platino.
+
+Lose You to Love Me è stata promossa attraverso un video musicale, in bianco e nero girato da Sophie Muller interamente su iPhone 11 Pro, e con un'esibizione dal vivo agli American Music Awards 2019, la prima in più di due anni per l'artista. Infine, è stata inserita nelle liste dei migliori pezzi dell'anno stilate da Vulture e Billboard, e ne è stata pubblicata la versione demo nel 2020 per celebrare il primo anniversario dell'uscita.
+
+Leggi la voce · Tutte le voci di qualità
+
+
+ Lo sapevi che...
+
+La definizione autobus chiesa si riferisce a tre veicoli speciali realizzati tra il 1951 e il 1959. Allestiti internamente come una cappella, essi vennero utilizzati come chiese itineranti sino ai primi anni Sessanta per fornire assistenza religiosa in nuove aree urbane italiane ancora sprovviste di edifici di culto.
+
+Leggi la voce · Proponi un'altra voce
+
+
+ Ricorrenze dell'11 settembre
+
+Salvador Allende
+Nati...
+Minamoto no Yoriie (1182)
+Ulrica Eleonora di Danimarca (1656)
+Augusto Bompiani (1852)
+...e morti
+Nikita Khruščëv (1971)
+Salvador Allende (1973)
+Anna Lindh (2003)
+In questo giorno accadde...
+1714 – Barcellona, nell'ambito della guerra di successione spagnola, si arrende alle armate spagnole e francesi.
+1944 – Le prime truppe statunitensi varcano i confini della Germania.
+1961 – Nasce il WWF.
+1973 – Colpo di Stato in Cile del 1973: Augusto Pinochet prende il potere in Cile. Il presidente Salvador Allende viene ucca strage di Torino del 1864 fu un eccidio compiuto da alcuni membri del Regio Esercito italiano (principalmente allievi carabinieri) il 21 e il 22 settembre ai danni di gruppi di manifestanti civili. Gli scontri avvennero durante manifestazioni di protesta popolare in merito al trasferimento della capitale del Regno d'Italia dalla città piemontese a Firenze.
+
+Nel pomeriggio del 21 settembre 1864, dopo che in mattinata scontri tra manifestanti e forze dell'ordine avevano avuto luogo in Piazza San Carlo a Torino, una folla di civili armati di bastoni tentò di avvicinarsi alla sede del ministero dell'interno in Piazza Castello, difesa da un contingente di allievi carabinieri: i carabinieri spararono sui manifestanti causando 15 vittime. La sera seguente, 22 settembre, nuovi tumulti ebbero luogo in Piazza San Carlo coinvolgendo altri allievi carabinieri che nella confusione spararono indiscriminatamente sulla folla, colpendo anche i membri di un battaglione di fanteria che stavano attraversando la piazza i quali aprirono a loro volta il fuoco: nel tiro incrociato rimasero uccise 47 persone tra militari e civili.
+
+I fatti provocarono la caduta del governo Minghetti nonché diverse inchieste ufficiali da parte di commissioni parlamentari; tutti gli arrestati furono tuttavia oggetto di un'amnistia generale nel febbraio 1865.
+
+Leggi la voce · Tutte le voci in vetrina
+
+
+ Voci di qualità
+
+Lose You to Love Me è un singolo della cantante statunitense Selena Gomez, pubblicato il 23 ottobre 2019 come primo estratto dal terzo album in studio Rare.
+
+Realizzata con i compositori Julia Michaels e Justin Tranter, che già da anni collaboravano con l'artista, e con i produttori Mattman & Robin e Finneas O'Connell, la canzone si configura come una ballata pop incentrata sull'amore verso sé stessi, in cui la voce della cantante è accompagnata da un coro, un pianoforte e strumenti ad arco.
+
+Il brano è stato accolto positivamente dai critici musicali e ha goduto di un grande successo commerciale, raggiungendo la top ten delle classifiche di ventotto paesi (fra cui Australia, Belgio, Germania, Malaysia, Nuova Zelanda, Paesi Bassi, Norvegia, Regno Unito, Singapore, Svezia e Svizzera) e regalando alla cantante la sua prima numero uno nella Billboard Hot 100 statunitense, nonché i suoi migliori piazzamenti in vari mercati. È stato certificato inoltre disco d'oro o di platino in quindici stati e, negli USA, dove ha venduto più di due milioni di copie, doppio disco di platino.
+
+Lose You to Love Me è stata promossa attraverso un video musicale, in bianco e nero girato da Sophie Muller interamente su iPhone 11 Pro, e con un'esibizione dal vivo agli American Music Awards 2019, la prima in più di due anni per l'artista. Infine, è stata inserita nelle liste dei migliori pezzi dell'anno stilate da Vulture e Billboard, e ne è stata pubblicata la versione demo nel 2020 per celebrare il primo anniversario dell'uscita.
+
+Leggi la voce · Tutte le voci di qualità
+
+
+ Lo sapevi che...
+
+La definizione autobus chiesa si riferisce a tre veicoli speciali realizzati tra il 1951 e il 1959. Allestiti internamente come una cappella, essi vennero utilizzati come chiese itineranti sino ai primi anni Sessanta per fornire assistenza religiosa in nuove aree urbane italiane ancora sprovviste di edifici di culto.
+
+Leggi la voce · Proponi un'altra voce
+
+
+ Ricorrenze dell'11 settembre
+
+Salvador Allende
+Nati...
+Minamoto no Yoriie (1182)
+Ulrica Eleonora di Danimarca (1656)
+Augusto Bompiani (1852)
+...e morti
+Nikita Khruščëv (1971)
+Salvador Allende (1973)
+Anna Lindh (2003)
+In questo giorno accadde...
+1714 – Barcellona, nell'ambito della guerra di successione spagnola, si arrende alle armate spagnole e francesi.
+1944 – Le prime truppe statunitensi varcano i confini della Germania.
+1961 – Nasce il WWF.
+1973 – Colpo di Stato in Cile del 1973: Augusto Pinochet prende il potere in Cile. Il presidente Salvador Allende viene ucca strage di Torino del 1864 fu un eccidio compiuto da alcuni membri del Regio Esercito italiano (principalmente allievi carabinieri) il 21 e il 22 settembre ai danni di gruppi di manifestanti civili. Gli scontri avvennero durante manifestazioni di protesta popolare in merito al trasferimento della capitale del Regno d'Italia dalla città piemontese a Firenze.
+
+Nel pomeriggio del 21 settembre 1864, dopo che in mattinata scontri tra manifestanti e forze dell'ordine avevano avuto luogo in Piazza San Carlo a Torino, una folla di civili armati di bastoni tentò di avvicinarsi alla sede del ministero dell'interno in Piazza Castello, difesa da un contingente di allievi carabinieri: i carabinieri spararono sui manifestanti causando 15 vittime. La sera seguente, 22 settembre, nuovi tumulti ebbero luogo in Piazza San Carlo coinvolgendo altri allievi carabinieri che nella confusione spararono indiscriminatamente sulla folla, colpendo anche i membri di un battaglione di fanteria che stavano attraversando la piazza i quali aprirono a loro volta il fuoco: nel tiro incrociato rimasero uccise 47 persone tra militari e civili.
+
+I fatti provocarono la caduta del governo Minghetti nonché diverse inchieste ufficiali da parte di commissioni parlamentari; tutti gli arrestati furono tuttavia oggetto di un'amnistia generale nel febbraio 1865.
+
+Leggi la voce · Tutte le voci in vetrina
+
+
+ Voci di qualità
+
+Lose You to Love Me è un singolo della cantante statunitense Selena Gomez, pubblicato il 23 ottobre 2019 come primo estratto dal terzo album in studio Rare.
+
+Realizzata con i compositori Julia Michaels e Justin Tranter, che già da anni collaboravano con l'artista, e con i produttori Mattman & Robin e Finneas O'Connell, la canzone si configura come una ballata pop incentrata sull'amore verso sé stessi, in cui la voce della cantante è accompagnata da un coro, un pianoforte e strumenti ad arco.
+
+Il brano è stato accolto positivamente dai critici musicali e ha goduto di un grande successo commerciale, raggiungendo la top ten delle classifiche di ventotto paesi (fra cui Australia, Belgio, Germania, Malaysia, Nuova Zelanda, Paesi Bassi, Norvegia, Regno Unito, Singapore, Svezia e Svizzera) e regalando alla cantante la sua prima numero uno nella Billboard Hot 100 statunitense, nonché i suoi migliori piazzamenti in vari mercati. È stato certificato inoltre disco d'oro o di platino in quindici stati e, negli USA, dove ha venduto più di due milioni di copie, doppio disco di platino.
+
+Lose You to Love Me è stata promossa attraverso un video musicale, in bianco e nero girato da Sophie Muller interamente su iPhone 11 Pro, e con un'esibizione dal vivo agli American Music Awards 2019, la prima in più di due anni per l'artista. Infine, è stata inserita nelle liste dei migliori pezzi dell'anno stilate da Vulture e Billboard, e ne è stata pubblicata la versione demo nel 2020 per celebrare il primo anniversario dell'uscita.
+
+Leggi la voce · Tutte le voci di qualità
+
+
+ Lo sapevi che...
+
+La definizione autobus chiesa si riferisce a tre veicoli speciali realizzati tra il 1951 e il 1959. Allestiti internamente come una cappella, essi vennero utilizzati come chiese itineranti sino ai primi anni Sessanta per fornire assistenza religiosa in nuove aree urbane italiane ancora sprovviste di edifici di culto.
+
+Leggi la voce · Proponi un'altra voce
+
+
+ Ricorrenze dell'11 settembre
+
+Salvador Allende
+Nati...
+Minamoto no Yoriie (1182)
+Ulrica Eleonora di Danimarca (1656)
+Augusto Bompiani (1852)
+...e morti
+Nikita Khruščëv (1971)
+Salvador Allende (1973)
+Anna Lindh (2003)
+In questo giorno accadde...
+1714 – Barcellona, nell'ambito della guerra di successione spagnola, si arrende alle armate spagnole e francesi.
+1944 – Le prime truppe statunitensi varcano i confini della Germania.
+1961 – Nasce il WWF.
+1973 – Colpo di Stato in Cile del 1973: Augusto Pinochet prende il potere in Cile. Il presidente Salvador Allende viene ucc.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+Nel pomeriggio del 21 settembre 1864, dopo che in mattinata scontri tra manifestanti e forze dell'ordine avevano avuto luogo in Piazza San Carlo a Torino, una folla di civili armati di bastoni tentò di avvicinarsi alla sede del ministero dell'interno in Piazza Castello, difesa da un contingente di allievi carabinieri: i carabinieri spararono sui manifestanti causando 15 vittime. La sera seguente, 22 settembre, nuovi tumulti ebbero luogo in Piazza San Carlo coinvolgendo altri allievi carabinieri che nella confusione spararono indiscriminatamente sulla folla, colpendo anche i mem</p>
+  </div>
+
+  <div class="borderstyle">
+    <p>this is under border</p>
+  </div>
+  <br>
+
+  <button class="button">login</button>
+<br>
+<br> -->
+<!-- <div style="background-color: bisque;">
+  <div class="slash">
+
+  </div>
+</div>
+<br><br><br><br>
+<div style="background-color: brown;">
+  <div class="slas">
+
+  </div>
+
+ 
+</div>
+ <footer class="propsticky"><
+
+<div class="box1">{</div> -->
+
+<!-- <div class="box">
+  <p>box</p>
+</div> -->
+
+
+
+
+</body>
+</html>

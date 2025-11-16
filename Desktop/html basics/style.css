@@ -1,0 +1,68 @@
+ /* #para{
+            background-color: brown;
+            color:darkslategrey; font-size: 35px;
+        }
+.myClassStyle{
+    font-size: 66px;
+}
+#myid{
+    background-color: blueviolet;
+    text-decoration: underline; */
+/* 
+.box{
+    width: 250px;
+    padding:12px;
+    border: 10px solid #465;
+    margin:10px;
+    background-color: yellow;
+}
+.but{
+    color:aqua;
+    background-color: coral;
+    border:none;
+    font-size:20px;
+    padding:12px;
+    margin:33px;
+    /* width:23px; */
+    /* border-radius: 22px;
+}
+.but:hover{ */ 
+    /* background-color:blue;
+    color:darkblue;
+}
+.but:active{
+    background-color: yellow;
+}
+input:focus{
+    border: 10px rgb(19, 187, 217);
+    outline: none;
+}
+p:first-child{
+    color:aqua; */
+/* }
+p:last-child{
+    color:chocolate;
+}
+p:nth-child(odd){
+    background-color: forestgreen;
+}
+:root{
+    --primary-color: lime;
+    --secondary-color: cyan;
+/* } */
+/* 
+p{
+    background-color: var(--primary-color);
+}
+
+span{
+    background-color: var(--primary-color); */
+
+/* ul{
+    background-color: var(--primary-color); */
+div p {
+    color: blue;
+}
+div + p{
+    color: burlywood
+}

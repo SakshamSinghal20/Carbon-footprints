@@ -1,0 +1,142 @@
+
+
+/* .box{
+    background-color: blueviolet;
+    height: 10em;
+    width:10em;
+    color: white;
+    font-size:2em;
+
+}
+@media (min-width:425px){
+    .box{
+        background-color: red;
+        color: white;
+    }
+} */
+
+/* .container{
+    display:flex;
+    background-color:rgb(208, 63, 63);
+    align-items: center;
+    justify-content: end;
+    gap:10px;
+}
+.item{
+   
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+} */
+
+
+
+/* div p {
+    color: blue;
+}
+div + p{
+    color: burlywood
+}
+div ~ p{
+    color:aquamarine
+}
+
+.myClass {
+    color: blue !important;
+}
+[title]{
+    color:brown;
+}
+[type="text"]{
+    color: blue;
+}
+[type="numbers"]{
+    color: turquoise;
+}
+[class~="highlight"]{
+    color:darkorchid;
+    background-color: rgba(255, 79, 20, 0.564);
+}
+[src$=".png"]{
+    border: 5px solid #000;
+}
+[href^="https"]{
+    background-color: rosybrown;
+    color:beige */
+/* } */
+/* [title*="new"]{
+    color: blue;
+    margin-left: 56px;
+    padding:44px;
+    background-color: azure;
+
+}
+h1 , p {
+    color:darkkhaki;
+} */
+
+
+    /* background-color: blue;
+    width: 100em;
+    height: 100em;  */
+
+    /* background-image:url("https://images.unsplash.com/photo-1757126029527-9a6040dc02fb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat;
+    background-size: 50vw 50vh;
+    background-position: top right; */
+    /* background-attachment: scroll; */ 
+/* 
+.bg{
+    background-image: url("https://images.unsplash.com/photo-1757137911040-c9d81879b212?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow:auto;
+}
+.myheight{
+    height:30em;
+    background-color: aqua;
+}
+.borderstyle{
+    border: 6px solid red;
+    padding: 10px;
+}
+.box{
+    padding: 70px;
+    border: none;
+    border-radius: 5px;
+}
+.button{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray; */
+
+/* .slash{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position:relative;
+    /* bottom: 0;
+    right:0; */
+    
+    /* top: 20px;
+    left: 20px;
+} */
+/* .slas{
+     width: 100px;
+    height: 100px;
+    background-color: blue;
+    position:absolute;
+    /* bottom: 0px; */
+    /* right: 2px;  */
+/* }
+.propsticky{
+    position: fixed;
+    top:50;
+    width: 100%;
+}
+.box{ */
+    /* max-width: 0cm;
+}  

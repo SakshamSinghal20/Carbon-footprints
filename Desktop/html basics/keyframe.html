@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+
+        <style>
+            /* @keyframes fadingEffect {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            } */
+            /* .fadingStyle{
+                font-size:2em;
+                animation:fadingEffect 6s ease 3;
+            } */
+             *{ 
+                background-color: aqua;
+             }
+             .ballWrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+             }
+
+             @keyframes bounce {
+                from { }
+                50% { transform: translateY(-48px); }
+             }
+
+             .ball{
+                width: 250px;
+                height:350px;
+                border-radius:10%;
+                background-color: palevioletred;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                animation: bounce 3s ease infinite;
+                color: white;
+                box-shadow: 5px 5px;
+                
+
+             }
+             
+        </style>
+    </head>
+    <body>
+        <!-- <p class="fadingStyle">
+            This is fading text
+        </p> -->
+        <div class="ballWrapper">
+        <div class="ball">Ball</div>
+        </div>
+    </body>
+</html>

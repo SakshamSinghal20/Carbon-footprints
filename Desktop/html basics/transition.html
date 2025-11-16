@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .boxwrapper{
+                display:grid;
+                grid-template-columns: 200px 200px 200px;
+                justify-content:center;
+                align-items:center;
+                text-align:center;
+                height:100vh;
+                gap:1em;
+            }
+            /* .box{
+                width:200px;
+                height:200px;
+                background-color: blue;
+                color:white;
+                transition: 0.5s; */ 
+            /* } */
+            /* .box:hover{ */
+                /* transform: translateX(50px);
+                transform: translateY(-50px);
+                transform: translate(50px,100px); */
+                /* transform: rotate(176deg); */
+                /* transform: scale(-2); */
+                /* transform: scale(0.5,1.5); */
+                /* transform: skewX(20deg); */
+                /* transform: skewY(20deg); */
+                /* transform: skew(20deg,40deg); */
+
+                /* transform:matrix(a,b,c,d,e,f)
+
+                a,d = scale(x,y)
+                b,d = skew(x,y)
+                e,f = translate(x,y) */
+                /*transform: matrix(scaleX,skewY,skewX,scaleY,translateX,translateY)*/
+
+                /* transform: matrix(1,0.5,1,2,30,40); */
+
+                /* transform:translate3d(60px,40px,50px); */
+                /* transform:scale3d(1.5,0.5,2); */
+                /* transform: rotate3d(1,2,0,50deg); */
+                
+            /* } */
+            .box1{
+                width:200px;
+                height:200px;
+                background-color: rgb(146, 5, 201);
+                color:white;
+                transition: transform 0.5s ease;
+            
+            }
+            .box1:hover{
+                transform: rotate3d(1,2,0,30deg);
+            }
+            .box2{
+                width:200px;
+                height:200px;
+                background-color: rgb(222, 180, 30);
+                color:white;
+                transition: 0.5s;
+                transition: transform 0.5s ease-in;
+            }
+            .box2:hover{
+                transform: rotateY(30deg);
+            }
+            .box3{
+                width:200px;
+                height:200px;
+                background-color: rgb(61, 213, 240);
+                color:white;
+                transition: 0.5s;
+                transition: transform 0.5s ease-out;
+            }
+            .box3:hover{
+                transform: scale(4);
+            }
+            .box4{
+                width:200px;
+                height:200px;
+                background-color: rgb(239, 28, 35);
+                color:white;
+                transition: transform 0.5s ease-in-out;
+            }
+            .box4:hover{
+                transform: translateX(20px);
+            }
+            .box5{
+                width:200px;
+                height:200px;
+                background-color: rgb(166, 207, 31);
+                color:white;
+                transition: 0.5s;
+                transition: transform 0.5s linear;
+            }
+            .box5:hover{
+                transform: scale(2);
+            }
+            .box6{
+                width:200px;
+                height:200px;
+                background-color: rgb(209, 51, 203);
+                color:white;
+                transition: 0.5s;
+                transition: transform 0.5s steps(2);
+            }
+            .box6:hover{
+                transform: rotate3d(1,1,0,30deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="boxwrapper">
+            
+            <div class="box1">
+                <p>BOX</p>
+            </div>
+            <div class="box2">
+                <p>BOX</p>
+            </div>
+            <div class="box3">
+                <p>BOX</p>
+            </div>
+            <div class="box4">
+                <p>BOX</p>
+            </div>
+            <div class="box5">
+                <p>BOX</p>
+            </div>
+            <div class="box6">
+                <p>BOX</p>
+            </div>
+        </div>
+    </body>
+</html>

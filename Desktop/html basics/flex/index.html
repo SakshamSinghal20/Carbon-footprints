@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<title>Flexbox</title>
+<style>
+    body{
+        background: linear-gradient(30deg, grey 10%, darkgrey 100% );
+    }
+.container{
+    display:flex;
+    width:100%;
+    
+    gap: 20px;
+    justify-content: center;
+    /* align-content: center; */
+}
+.container > div{
+    padding:20px;
+    background: linear-gradient(30deg, grey 10%, rgb(155, 5, 60) 100% );
+    
+    width:250px;
+    
+}
+section{
+    background-color: darkgray;
+}
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+      gap: 1.2rem;
+      margin-top: 1.8rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 6px 18px rgba(100,100,130,0.12);
+      transition: transform 0.18s, box-shadow 0.18s, filter 0.18s;
+      filter: grayscale(15%) contrast(1.03) brightness(0.98);
+    }
+    .gallery img:hover {
+      transform: scale(1.027) rotate(-2deg);
+      filter: none;
+      box-shadow: 0 12px 36px rgba(70,99,172,0.18);
+      outline: 2.5px solid darkgray;
+      outline-offset: -6px;
+      z-index: 1;
+      position: relative;
+    }
+
+</style>
+</head>
+<body>
+<section>
+<div class="container">
+    <div style=width:300px;>column 1</div>
+    <div>column 2</div>
+    <div>column 3</div>
+</div>
+</section>
+<section>
+<div class="gallery">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+    <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667" alt="nature">
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Dashboard</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>User Dashboard</h2>
+<div id="dashboard"></div>
+
+<script>
+    async function loadUsers() {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await res.json();
+
+        let container = document.getElementById("dashboard");
+        container.innerHTML = ""; // clear previous
+
+        data.forEach(user => {
+            container.innerHTML += `
+                <div class="card">
+                    <h3>${user.name}</h3>
+                    <p><b>Email:</b> ${user.email}</p>
+                    <p><b>City:</b> ${user.address.city}</p>
+                </div>
+            `;
+        })
+    }
+
+    loadUsers();
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="poke">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Pokemon img</th>
+                    <th>Pokemon name</th>
+                </tr>
+            </thead>
+            <tbody id="pokemon-body"></tbody>
+        </table>
+    </div>
+
+    <script>
+        async function pokemon() {
+
+            const res = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+            const data = await res.json();
+
+            const tbody = document.getElementById("pokemon-body");
+            tbody.innerHTML = "";
+
+            tbody.innerHTML += `
+                <tr>
+                    <td><img src="${data.sprites.front_default}" width="80"></td>
+                    <td>${data.name}</td>
+                </tr>
+            `;
+        }
+
+        pokemon();
+    </script>
+</body>
+</html>

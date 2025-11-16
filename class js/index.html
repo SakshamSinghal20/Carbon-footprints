@@ -1,0 +1,42 @@
+<html>
+<head>
+     <title>Polaris Projects</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+
+     </style>
+</head>
+<body>
+     <button onclick="fetchData()">fetch data</button>
+     <input type="text" id="input" />
+     <p id="name"></p>
+     <div id="pokeImg"></div>
+     <!-- <img src="" alt="" id="pokeImg"/> -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script>  
+
+async function fetchData(){
+     let name = document.getElementById('name');
+     let pokeImg = document.getElementById('pokeImg');
+     let input = document.getElementById('input');
+     try{
+         const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${input.value}`);
+         const data = await resp.json();
+          let newEle = document.createElement('p');
+          newEle.innerText = data.name;
+          name.append(newEle);
+
+          let imgEle = document.createElement('img');
+          imgEle.setAttribute("src", data.sprites.front_default);
+          pokeImg.append(imgEle);
+
+     }catch(error){
+          console.log("errror", error)
+     }
+     
+}
+     
+     
+</script>
+</body>
+</html>
