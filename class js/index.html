@@ -7,8 +7,39 @@
      </style>
 </head>
 <body>
-     
-<script>  
+     <p id="myPara">This is original text.</p>
+     <button id="changeBtn">Change Text</button>
+
+     <ul id="myList">
+    <li>Item 1</li>
+</ul>
+<button id="addBtn">Add Item</button>
+
+<div id="myDiv">
+    <p>Child 1</p>
+    <p>Child 2</p>
+    <p>Child 3</p>
+</div>
+
+<button id="removeBtn">Remove Last Child</button>
+
+<script>
+document.getElementById("removeBtn").addEventListener("click", function () {
+    const div = document.getElementById("myDiv");
+    if (div.lastElementChild) {
+        div.removeChild(div.lastElementChild);
+    }
+});
+
+document.getElementById("addBtn").addEventListener("click", function () {
+    const li = document.createElement("li");
+    li.textContent = "New Item";
+    document.getElementById("myList").appendChild(li);
+});
+     document.getElementById("changeBtn").addEventListener("click", function () {
+    document.getElementById("myPara").textContent = "Text has been changed!";
+});
 </script>
+
 </body>
 </html>
